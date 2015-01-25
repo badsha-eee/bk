@@ -19,18 +19,19 @@ h6{
 	outline: inherit;
 }
 
+.box{border:2px solid #fff;}
 
-.box h2 {text-align: center;text-shadow:0px 0px 1px black;}
+.box h2 {text-align: center;text-shadow:0px 0px 2px #0f0f0f;}
 
-div.box:nth-child(1){background-color: #009688;}
-div.box:nth-child(2){background-color: #00BCD4;}
-div.box:nth-child(3){background-color: #E91E63;}
-div.box:nth-child(4){background-color: #9C27B0;}
-div.box:nth-child(5){background-color: #47a447}
-div.box:nth-child(6){background-color: #3F51B5;}
-div.box:nth-child(7){background-color: #ed9c28;}
-div.box:nth-child(8){background-color: #03A9F4;}
-div.box:nth-child(9){background-color: #F44336;}
+div.box:nth-child(1){background-color: #02A8F3;}
+div.box:nth-child(2){background-color: #8BC34A;}
+div.box:nth-child(3){background-color: #AB47BC;}
+div.box:nth-child(4){background-color: #DA4336;}
+div.box:nth-child(5){background-color: #F09300;}
+div.box:nth-child(6){background-color: #A42613;}
+div.box:nth-child(7){background-color: #1B39A8;}
+div.box:nth-child(8){background-color: #00685B;}
+div.box:nth-child(9){background-color: #FFAB91;}
 
 footer .breadcrumb li:first-child{
 	position: absolute;
@@ -49,17 +50,17 @@ footer .text-danger{
 
 @font-face{
 	font-family:'Noto';
-	src:url('fonts/NotoSansBengali-Regular.ttf');
+	src:url('asset/fonts/NotoSansBengali-Regular.ttf');
 }
 
 @font-face{
 	font-family:'Noto Bold';
-	src:url('fonts/NotoSansBengali-Bold.ttf');
+	src:url('asset/fonts/NotoSansBengali-Bold.ttf');
 }
 
 @font-face {
 	font-family:"Flaticon";
-	src:url('fonts/flaticon.ttf');
+	src:url('asset/fonts/flaticon.ttf');
 }
 
 [class^="icon-"]:before,
@@ -129,4 +130,86 @@ footer .text-danger{
 	[class*=" icon-"]:after{
 		font-size: 1em !important;
 	}
+}
+
+/*add animation to home page boxes*/
+
+.box {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: scaleFadeIn 0.5s forwards;
+  -ms-animation: scaleFadeIn 0.5s forwards;
+  animation: scaleFadeIn 0.5s forwards;
+}
+div .box:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+  -ms-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+div .box:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+div .box:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+  -ms-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+div .box:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+div .box:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+div .box:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+div .box:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+  -ms-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+div .box:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+div .box:nth-child(9) {
+  -webkit-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+@-webkit-keyframes scaleFadeIn {
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scaleFadeIn {
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
