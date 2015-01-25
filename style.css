@@ -1,0 +1,132 @@
+body{
+	font-family: 'Noto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Noto Bold';
+}
+
+.row {margin: 0 auto;}
+
+.row a, .row a:focus{
+	color:#fff;
+	text-decoration: none;
+	outline: inherit;
+}
+
+
+.box h2 {text-align: center;text-shadow:0px 0px 1px black;}
+
+div.box:nth-child(1){background-color: #009688;}
+div.box:nth-child(2){background-color: #00BCD4;}
+div.box:nth-child(3){background-color: #E91E63;}
+div.box:nth-child(4){background-color: #9C27B0;}
+div.box:nth-child(5){background-color: #47a447}
+div.box:nth-child(6){background-color: #3F51B5;}
+div.box:nth-child(7){background-color: #ed9c28;}
+div.box:nth-child(8){background-color: #03A9F4;}
+div.box:nth-child(9){background-color: #F44336;}
+
+footer .breadcrumb li:first-child{
+	position: absolute;
+	left: 15px;
+}
+
+footer .breadcrumb li:last-child{
+	display: none;
+}
+
+footer .breadcrumb a{ color: inherit;}
+
+footer .text-danger{
+	font-weight: bold!important;
+}
+
+@font-face{
+	font-family:'Noto';
+	src:url('fonts/NotoSansBengali-Regular.ttf');
+}
+
+@font-face{
+	font-family:'Noto Bold';
+	src:url('fonts/NotoSansBengali-Bold.ttf');
+}
+
+@font-face {
+	font-family:"Flaticon";
+	src:url('fonts/flaticon.ttf');
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+	font-family:Flaticon!important;
+	font-size:3em;
+	display:block;
+}
+
+.icon-beach2:before{content: "\e000";}
+
+.icon-dots7:before{content: "\e001";}
+
+.icon-full22:before{content: "\e002";}
+
+.icon-gift41:before{content: "\e003";}
+
+.icon-hotel78:before{content: "\e004";}
+
+.icon-man204:before{content: "\e005";}
+
+.icon-restaurant2:before{content: "\e006";}
+
+.icon-robot3:before {content: "\e007";}
+
+.icon-ticket13:before{content: "\e008";}
+
+@media screen and (max-width: 63.125em){
+	.col-sm-3{
+		width: 50%;
+		float: left;
+	}
+
+	.box:last-child{width: 100%;}
+
+	.box h2{
+		line-height: 1.5em;
+	}
+
+	.box p{
+		display: none;
+	}
+
+	footer .breadcrumb li{
+		display:block!important;
+		text-align: left;
+	}
+
+	footer .breadcrumb li:first-child{
+		visibility: hidden;
+	}
+
+	footer .breadcrumb li:last-child{
+		display: block;
+	}
+
+
+	footer .breadcrumb li:before{
+		content: "";
+	}
+
+	[class^="icon-"]:before,
+	[class*=" icon-"]:before,
+	[class^="icon-"]:after,
+	[class*=" icon-"]:after{
+		font-size: 1em !important;
+	}
+}
