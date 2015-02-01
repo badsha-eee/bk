@@ -60,27 +60,34 @@
 
 <div class="row single-restaurant">
 	<div class="well">
-		<div class="media">
-            <div class="media-left media-top">
-                <a href="#">
-                    <img src="thumbnail.jpg" class="media-object" height="300" width="300" alt="">
-                <p>Web Site: facebook.com</p>
-                </a>
-            </div><!-- ./media-left -->
-            <div class="media-body">
-                <h1>Lorem Ipsum Dolor Sit</h1>
-                <p>Ekhon Khola <small>(robi-brihospoti 10:00 am - 7:00 pm)</small></p>
-                <p>Fon: 0209477</p>
-                <p>Khabarer Dhoron: Lorem, Ipsum, Dolor sit, amet, consectetur.</p>
-                <p>Reting: &starf; &starf; &starf; &star; &star; </p>
-                <button class=" btn btn-warning">Riviu likhun</button>
-                <button class=" btn btn-warning">Google Map</button>
-                <button class=" btn btn-warning">Menu</button>
-            </div><!-- ./media-body -->
-        </div><!-- ./media -->
+		<div class="row">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <img src="thumbnail.jpg" class="img-responsive" height="300" width="300" alt="">
+                </div>
+                <div class="col-md-5 details">
+                    <h1>Lorem Ipsum Dolor Sit</h1>
+                    <p>Ekhon Khola <small>(robi-brihospoti 10:00 am - 7:00 pm)</small></p>
+                    <p>Fon: 0209477</p>
+                    <p>Khabarer Dhoron: Lorem, Ipsum, Dolor sit, amet, consectetur.</p>
+                    <p>Reting: &starf; &starf; &starf; &star; &star; </p>
+                    <button class=" btn btn-warning">Riviu likhun</button>
+                    <button class=" btn btn-warning">Google Map</button>
+                    <button class=" btn btn-warning" data-toggle="modal" data-target="#menuCard">Menu</button>
+                </div><!-- details -->
+
+                <div class="col-md-2">
+                    <p>Food: 3</p>
+                    <p>Service: 3</p>
+                    <p>Value: 3</p>
+                    <p>Atmosphere: 3</p>
+                </div>
+            </div><!-- ./col-md-12 -->
+        </div> <!-- row -->
 	</div><!-- .well-->
 
-	<div class="subidha col-md-5">
+	<div class="row second-part">
+    <div class="subidha col-md-6">
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -123,27 +130,156 @@
 		</table>
 	</div><!--subidha -->
 
-	<div class="khabar">
+	<div class="khabar col-md-6">
 		<ul>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
-			<li><img src="thumbnail.jpg" alt=""></li>
+			<li><img class="img-responsive" src="thumbnail.jpg" alt=""></li>
+			<li><img class="img-responsive" src="thumbnail.jpg" alt=""></li>
+			<li><img class="img-responsive" src="thumbnail.jpg" alt=""></li>
+			<li><img class="img-responsive" src="thumbnail.jpg" alt=""></li>
 		</ul>
-	</div>
+	</div><!-- ./khabar -->
+    </div><!-- ./second-part-->
+
+    <div class="col-md-12 user-reviews">
+        <h2>Reviews</h2>
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img data-holder-rendered="true" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEyLjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" class="media-object" data-src="holder.js/64x64" alt="64x64">
+            </a>
+            <br>
+            <i class="mdi-device-brightness-high"> John Doe</i>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Awesome! Osadharon! Mast!</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div><!-- media -->
+
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img data-holder-rendered="true" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEyLjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" style="width: 64px; height: 64px;" class="media-object" data-src="holder.js/64x64" alt="64x64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div><!-- media -->
+
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img data-holder-rendered="true" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEyLjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" style="width: 64px; height: 64px;" class="media-object" data-src="holder.js/64x64" alt="64x64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div><!-- media -->
+
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img data-holder-rendered="true" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEyLjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" style="width: 64px; height: 64px;" class="media-object" data-src="holder.js/64x64" alt="64x64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div><!-- media -->
+    </div><!-- user-reviews -->
+
 </div><!-- single-restaurant -->
 
 </div><!--container fluid -->
+
+<!-- Modal -->
+<div class="modal fade" id="menuCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nam</th>
+                    <th>Dam</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsome</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae.</p>
+                </td>
+                <td>10 /=</td>
+            </tr>
+        </table>
+      </div><!-- modal-body -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialogue -->
+</div><!-- modal fade -->
 
 <script src="asset/js/jquery-1.js"></script>
 <script src="asset/js/jquery.js"></script>
 <script src="asset/js/bootstrap.js"></script>
 <script src="asset/js/material.js"></script>
 <script src="asset/js/ripples.js"></script>
-<script>$.material.init();</script>
+<script src="asset/js/jquery.nicescroll.js"></script>
+<script>
+$.material.init();
+$(document).ready(
+    function() {
+        $("html").niceScroll();
+        }
+);
+</script>
 </body>
 </html>

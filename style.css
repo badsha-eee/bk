@@ -227,7 +227,11 @@ div .box:nth-child(9) {
   display: inline-block;
 }
 
-.khabar img{
-  height: 250px;
-  width: 300px;
+.user-reviews .media{
+  border:solid thin #dedede;
+  padding: 2%;
+}
+
+.user-reviews .media-left{
+  width: 10%;
 }
