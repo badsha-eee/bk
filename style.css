@@ -13,7 +13,7 @@ h6{
 
 .row {margin: 0 auto;}
 
-.row a, .row a:focus{
+.home-page .row a, .row a:focus{
 	color:#fff;
 	text-decoration: none;
 	outline: inherit;
@@ -212,4 +212,12 @@ div .box:nth-child(9) {
     -ms-transform: scale(1);
     transform: scale(1);
   }
+}
+
+.listing-container{
+  margin-top: 6em;
+}
+
+.listing-right{
+  border-left: black thin solid;
 }
