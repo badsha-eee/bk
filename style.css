@@ -214,10 +214,20 @@ div .box:nth-child(9) {
   }
 }
 
-.listing-container{
+.listing-container, .single-restaurant{
   margin-top: 6em;
+  background: #fff;
 }
 
 .listing-right{
   border-left: black thin solid;
+}
+
+.khabar ul li{
+  display: inline-block;
+}
+
+.khabar img{
+  height: 250px;
+  width: 300px;
 }
