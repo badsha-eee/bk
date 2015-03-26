@@ -5,22 +5,39 @@
 	<title>Document</title>
 	<script type="text/javascript">
 		function gonok (hisab) {
-			var prothom = document.getElementById('num1').value;
-			var ditio = document.getElementById('num2').value;
-			var somporko = document.getElementById('opr').value;
+			var num1 = Number(document.getElementById('a').value);
+			var num2 = Number(document.getElementById('b').value);
+			var rltn = document.getElementById('c').value;
 
-			var fol = prothom + somporko + ditio;
-			document.getElementById('result').innerHTML= fol;
+			var rslt = 0;
+
+			if (rltn == 'add') {
+				rslt = num1 + num2;
+			}
+			else if (rltn == 'sub') {
+				rslt = num1 - num2;
+			}
+
+			else if (rltn == 'div') {
+				rslt = num1 / num2;
+			}
+
+			else {rslt = num1 * num2;}
+
+			alert('The result is '+ rslt);
 		}
 	</script>
 </head>
+
 <body>
-	<input type="number" id="num1" onkeydown="gonok('hisab')">
-	<select name="nai" id="opr">
-		<option value="+">Add</option>
-		<option value="-">Sub</option>
+	<input type="number" id="a">
+	<select name="nai" id="c">
+		<option value="add">Addition</option>
+		<option value="sub">Subtract</option>
+		<option value="div">Division</option>
+		<option value="mul">Multiply</option>
 	</select>
-	<input type="number" id="num2"  onkeydown="gonok('hisab')">
-	 = <span id="result"></span>
+	<input type="number" id="b">
+	<input type="button" value="Result" onclick="gonok()">
 </body>
 </html>
