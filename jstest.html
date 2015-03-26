@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function gonok (hisab) {
+			var prothom = document.getElementById('num1').value;
+			var ditio = document.getElementById('num2').value;
+			var somporko = document.getElementById('opr').value;
+
+			var fol = prothom + somporko + ditio;
+			document.getElementById('result').innerHTML= fol;
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="num1" onkeydown="gonok('hisab')">
+	<select name="nai" id="opr">
+		<option value="+">Add</option>
+		<option value="-">Sub</option>
+	</select>
+	<input type="number" id="num2"  onkeydown="gonok('hisab')">
+	 = <span id="result"></span>
+</body>
+</html>
